@@ -15,30 +15,30 @@ move $t1, $a1; height
 
 move $t2, $zero; width mod
 
-move $t3, $zero; height mod
+li $t3, 1; height mod
+
+li $t4, 1
 
 check_pos:
 
-move $t2, $zero;
+li $t2, 1
 
 ;salto de linea
 li $a0, 10
 li $v0, 11
 syscall
 
-beq $t3, $zero, print_H
-
 beq $t3, $t1, print_H_end
 
-
-
+beq $t3, $t4, print_H
 
 
 print_V:
+beq $t2, $t0, print_endV
 
 beq $t2, $zero, print
 
-beq $t2, $t0, print_endV
+
 
 
 
@@ -93,7 +93,7 @@ bne $t2, $t0, print_H
 
 addi $t3, $t3, 1
 
-bne $t3, $t1, check_pos
+j check_pos
 
 print_H_end:
 
