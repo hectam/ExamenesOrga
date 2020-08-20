@@ -28,7 +28,7 @@ syscall
 
 beq $t3, $zero, print_H
 
-beq $t3, $t1, print_H
+beq $t3, $t1, print_H_end
 
 
 
@@ -38,7 +38,7 @@ print_V:
 
 beq $t2, $zero, print
 
-beq $t2, $t0, print
+beq $t2, $t0, print_endV
 
 
 
@@ -65,9 +65,17 @@ addi $t2, $t2, 1
 
 bne $t2, $t0, print_V
 
+
+print_endV:
+
+li $a0, 42
+
+jal print_char
+
 addi $t3, $t3, 1
 
 beq $t2, $t0, check_pos
+
 
 
 
@@ -86,6 +94,16 @@ bne $t2, $t0, print_H
 addi $t3, $t3, 1
 
 bne $t3, $t1, check_pos
+
+print_H_end:
+
+li $a0, 42
+
+jal print_char
+
+addi $t2, $t2, 1
+
+bne $t2, $t0, print_H_end
 
 
 lw $ra, 0($sp)
