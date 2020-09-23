@@ -86,8 +86,9 @@ heapify:
         
 
         sub esp, 8
+        mov ecx, dword[esp + 16]
         mov ebx, [esp + 8]
-        mov ebx, [ebx + dword[esp + 16] * 4]
+        mov ebx, [ebx + ecx* 4]
         lea eax, ebx
         push eax
 
