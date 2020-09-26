@@ -1,0 +1,3 @@
+/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/build/CMakeFiles/rebuild_cache.dir
+/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/build/CMakeFiles/edit_cache.dir
+/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/build/CMakeFiles/sc-plugin.dir

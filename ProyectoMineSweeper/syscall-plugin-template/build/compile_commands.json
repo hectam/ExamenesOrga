@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/build",
+  "command": "/bin/g++-9  -Dsc_plugin_EXPORTS -I/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/../pdk -I/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/build -I/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template  -g -fPIC   -std=gnu++14 -o CMakeFiles/sc-plugin.dir/plugin_main.cpp.o -c /home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/plugin_main.cpp",
+  "file": "/home/abstract/Documentos/ProyectoMineSweeper/syscall-plugin-template/plugin_main.cpp"
+}
+]
